@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/nunito-v25-cyrillic_latin-600.woff2" as="font" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <title>ZumBurgers</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
+    <script language="JavaScript" type="text/javascript" src="./index.js" defer></script> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header_container">
+            <span class="header_logo-name">ZumBurgers 
+                 <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23293 0.791288C1.06958 0.882334 0.853965 1.07743 0.74289 1.227L0.546875 1.50664V4.99234V8.48455L0.716755 8.92027C1.33094 10.4875 2.65077 11.528 4.23849 11.6906L4.66319 11.7361L4.69586 19.605L4.72853 27.4738L4.87227 27.708C4.95721 27.838 5.1467 28.0266 5.29697 28.1307C5.53872 28.2998 5.62366 28.3193 6.06797 28.3193C6.50573 28.3193 6.59721 28.2998 6.82589 28.1437C6.9631 28.0461 7.15258 27.8575 7.24406 27.721L7.4074 27.4803L7.44007 19.6115L7.47274 11.7361L7.89744 11.6906C9.52436 11.528 10.9487 10.364 11.4453 8.80971C11.5891 8.36099 11.5891 8.28946 11.5891 4.93382V1.51314L11.4126 1.25952C11.1252 0.856319 10.8246 0.687237 10.3215 0.661224C9.78572 0.635212 9.40022 0.810799 9.1062 1.227L8.91018 1.50664L8.87751 3.13894L8.84485 4.77774H8.15879H7.47274L7.44007 3.14544C7.4074 1.53915 7.4074 1.51314 7.24406 1.27903C6.96964 0.869326 6.63641 0.687237 6.13984 0.661224C5.60406 0.635212 5.21857 0.810799 4.92454 1.227L4.72853 1.50664L4.69586 3.13894L4.66319 4.77774H3.97714H3.29109L3.25842 3.14544L3.22575 1.51314L3.04933 1.25952C2.76185 0.856319 2.46129 0.687237 1.95818 0.661224C1.59882 0.641716 1.47468 0.667728 1.23293 0.791288ZM8.81218 7.73669C8.81218 8.13338 8.49202 8.56909 8.02812 8.81622C7.81903 8.92677 7.63609 8.93978 6.06797 8.93978C4.42144 8.93978 4.32343 8.93327 4.07515 8.79671C3.63085 8.56259 3.32376 8.12688 3.32376 7.73669V7.54159H6.06797H8.81218V7.73669Z" fill="white"/>
+                    <path d="M14.7772 0.79129C14.6138 0.882334 14.3982 1.07743 14.2872 1.227L14.0911 1.50664L14.0585 8.75769L14.0258 16.0087L13.477 16.1713C12.1049 16.5615 11.079 17.3809 10.5041 18.532C10.001 19.553 9.91602 19.9757 9.91602 21.4584C9.91602 22.5444 9.93562 22.8046 10.0532 23.2793C10.6935 25.796 12.1114 27.5129 14.0911 28.1697C14.4766 28.2932 14.6857 28.3193 15.4306 28.3193C16.1754 28.3193 16.3845 28.2932 16.77 28.1697C18.7498 27.5129 20.1676 25.796 20.8079 23.2793C20.9255 22.8046 20.9451 22.5444 20.9451 21.4584C20.9451 20.3659 20.9255 20.1187 20.8014 19.67C20.3113 17.8686 19.1418 16.6721 17.3842 16.1713L16.8353 16.0087L16.8027 8.76419L16.77 1.51314L16.5936 1.25952C16.3061 0.856319 16.0056 0.687239 15.5024 0.661226C15.1431 0.641716 15.0189 0.667728 14.7772 0.79129ZM16.7177 18.8571C17.4495 19.1042 17.9265 19.67 18.1094 20.4894C18.2336 21.0552 18.1617 22.4729 17.9788 23.0517C17.639 24.1182 16.9922 25.0156 16.293 25.3668C15.8553 25.5879 15.0124 25.5944 14.5812 25.3733C13.8363 24.9896 13.2352 24.1572 12.8693 23.0192C12.7386 22.59 12.719 22.4014 12.719 21.4584C12.719 20.4114 12.7256 20.3789 12.9085 19.9757C13.2352 19.2733 13.9017 18.8181 14.7772 18.7011C14.7772 18.7011 16.3126 18.7271 16.7177 18.8571Z" fill="white"/>
+                    <path d="M27.3748 0.765276C26.5384 1.20099 25.2447 2.38457 24.4476 3.43158C22.4613 6.06537 21.3048 9.78519 21.037 14.435C20.9389 16.1388 20.9847 16.3924 21.4355 16.8411C21.8733 17.2769 21.9909 17.2964 24.4737 17.2964H26.6038V22.3233V27.3568L26.7541 27.6299C26.8325 27.786 27.0285 28.0006 27.1853 28.1177C27.4401 28.2998 27.5054 28.3193 27.9694 28.3193C28.4137 28.3193 28.5051 28.2998 28.7338 28.1437C28.871 28.0461 29.0605 27.8575 29.152 27.721L29.3153 27.4803V14.5V1.51314L29.1389 1.25952C28.8514 0.849817 28.5509 0.687237 28.0478 0.661224C27.7211 0.648218 27.5577 0.667728 27.3748 0.765276ZM26.6038 9.88274V14.5H25.2186H23.84L23.8857 13.8302C24.0033 12.0418 24.4411 9.88274 25.0095 8.28946C25.3885 7.23594 26.4078 5.26548 26.5711 5.26548C26.5907 5.26548 26.6038 7.33999 26.6038 9.88274Z" fill="white"/>
+                </svg>
+            </span>    
+                
+                      
+            <div class="header_title-container">
+                <h1 class="header_title">
+                    <span class="header_title-text">
+                    Только Самые
+                    </span>
+                    <span class="header_title-red">сочные бургеры!</span>
+                </h1>
+                <p class="header_appeal">Бесплатная доставка от 3000тг</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <nav class="navigation">
+            <div class="container navigation_container">
+                <ul class="navigation_list">
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_burger" 
+                        onclick="hideCatalogContent1()">Бургеры</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_snack"  
+                        onclick="hideCatalogContent2()">Закуски</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_hot-dog"
+                        onclick="hideCatalogContent3()">Хот-доги</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_combo"
+                        onclick="hideCatalogContent4()">Комбо</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_shawarma"
+                        onclick="hideCatalogContent5()">Шаурма</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_pizza">Пицца</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_wok">Вок</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_dessert">Десерты</button>
+                    </li>
+                    <li class="navigation_item">
+                        <button class="navigation_button navigation_button_sause">Соусы</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="catalog">
+            <div class="container catalog_container">
+                <div class="catalog_order order">
+                    <section class="order_wrapper">
+                        <div class="order_wrap-title" tabindex="0" role="button">
+                            <h2 class="order_title">
+                                Корзина
+                            </h2>
+                            <span class="order_count">4</span>
+                        </div>
+
+                            <!-- <div class="order_wrap-list order-open">
+                                <ul class="order_list">
+                                    <li class="order_item">
+                                        <img class="order_image" src="./images/burgerbig.jpg" alt=" МакШнакенс">
+                                        <div class="order_product">
+                                            <h3 class="order_product-title">
+                                                МакШнакенс
+                                            </h3>
+                                            <p class="order_product_weight">499г</p>
+
+                                            <p class="order_product_weight">
+                                                <span class="order_pruduct-price">6499</span>
+                                                <span class="currency">ТГ</span>
+                                            </p>
+                                        </div>
+                                        <div class="order_product-count count">
+                                            <button class="count_minus">-</button>
+
+                                            <p class="count_amount">1</p>
+
+                                            <button class="count_plus">+</button>
+                                        </div>
+                                    </li>
+                                    <li class="order_item">
+                                        <img class="order_image" src="./images/hotdogbig.jpg" alt=" ХотДог">
+                                        <div class="order_product">
+                                            <h3 class="order_product-title">
+                                                Мак Хот-Дог 
+                                            </h3>
+                                            <p class="order_product_weight">299г</p>
+
+                                            <p class="order_product_weight">
+                                                <span class="order_pruduct-price">3499</span>
+                                                <span class="currency">ТГ</span>
+                                            </p>
+                                        </div>
+                                        <div class="order_product-count  count">
+                                            <button class="count_minus">-</button>
+
+                                            <p class="count_amount">1</p>
+
+                                            <button class="count_plus">+</button>
+                                        </div>
+                                    </li>
+                                    <li class="order_item">
+                                        <img class="order_image" src="./images/free.jpg" alt=" ФРИ">
+                                        <div class="order_product">
+                                            <h3 class="order_product-title">
+                                               Мак ФРИ
+                                            </h3>
+                                            <p class="order_product_weight">399г</p>
+
+                                            <p class="order_product_weight">
+                                                <span class="order_pruduct-price">1499</span>
+                                                <span class="currency">ТГ</span>
+                                            </p>
+                                        </div>
+                                        <div class="order_product-count  count">
+                                            <button class="count_minus">-</button>
+
+                                            <p class="count_amount">1</p>
+
+                                            <button class="count_plus">+</button>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="order_total">
+                                    <p>Итого</p>
+                                    <p>
+                                        <span class="order_total-amount">6499</span>
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                </div>
+                                <button class="order_submit" onclick="buttonOpen()">
+                                    Оформить заказ
+                                </button>
+                                <div class="order_wrap-appeal">
+                                <p class="order_appeal">Бесплатная доставка</p>
+                                </div>
+                            </div> -->
+                            <button class="order_close" onclick="hideOrder()">Свернуть</button>
+                            <button class="order_close order_close_two order_wrap-list" onclick="hideOrder()">Развернуть</button>
+
+                    </section>
+                </div>
+                <div class="catalog_wrapper catalog_hide catalog_wrapper_burger">
+                    <h2 class="catalog_title">
+                        Бургеры
+                    </h2>
+                    <div class="catalog_wrap-list">
+                        <ul class="catalog_list">
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/photo.jpg" alt="">
+                                    <p class="product_price">
+                                        4599
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Мясной МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">492г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/photo-1.jpg" alt="">
+                                    <p class="product_price">
+                                        3899
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Сырный МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">438г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/photo-2.jpg" alt="">
+                                    <p class="product_price">
+                                        4199
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Сытный МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">502г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/photo-3.jpg" alt="">
+                                    <p class="product_price">
+                                        3199
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Тяжелый МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">456г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/photo-4.jpg" alt="">
+                                    <p class="product_price">
+                                        3899
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Классический МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">406г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/photo-5.jpg" alt="">
+                                    <p class="product_price">
+                                        4999
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Казахский МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">512г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog_wrapper catalog_hide catalog_wrapper_snack">
+                    <h2 class="catalog_title">
+                       Закуски
+                    </h2>
+                    <div class="catalog_wrap-list">
+                        <ul class="catalog_list">
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/nachos.jpg" alt="">
+                                    <p class="product_price">
+                                        759
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Начос</button>
+                                    </h3>
+
+                                    <p class="product_weight">292г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/fries.jpg" alt="">
+                                    <p class="product_price">
+                                        799
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Картошка фри</button>
+                                    </h3>
+
+                                    <p class="product_weight">338г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/circles.jpg" alt="">
+                                    <p class="product_price">
+                                        799
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Луковые кольца</button>
+                                    </h3>
+
+                                    <p class="product_weight">402г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog_wrapper catalog_hide catalog_wrapper_hotdog">
+                    <h2 class="catalog_title">
+                       Хот-доги
+                    </h2>
+                    <div class="catalog_wrap-list">
+                        <ul class="catalog_list">
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/hotdog1.jpg" alt="">
+                                    <p class="product_price">
+                                        4599
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Мясной МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">492г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/hotdog2.jpg" alt="">
+                                    <p class="product_price">
+                                        3899
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Сырный МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">438г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/hotdog3.jpg" alt="">
+                                    <p class="product_price">
+                                        4199
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Сытный МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">502г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/hotdog1.jpg" alt="">
+                                    <p class="product_price">
+                                        3199
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Тяжелый МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">456г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/hotdog2.jpg" alt="">
+                                    <p class="product_price">
+                                        3899
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Классический МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">406г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/hotdog3.jpg" alt="">
+                                    <p class="product_price">
+                                        4999
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Казахский МакШнакенс</button>
+                                    </h3>
+
+                                    <p class="product_weight">512г</p>
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog_wrapper catalog_hide catalog_wrapper_combo">
+                    <h2 class="catalog_title">
+                       Комбо
+                    </h2>
+                    <div class="catalog_wrap-list">
+                        <ul class="catalog_list">
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/comboburger.png" alt="">
+                                    <p class="product_price">
+                                        5000
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Мясное Комбо</button>
+                                    </h3>
+
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/combohotdog.jpg" alt="">
+                                    <p class="product_price">
+                                        4300
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Сырный Хотдог</button>
+                                    </h3>
+
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog_wrapper catalog_hide catalog_wrapper_shaurma">
+                    <h2 class="catalog_title">
+                       Шаурма
+                    </h2>
+                    <div class="catalog_wrap-list">
+                        <ul class="catalog_list">
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/shaurma.jpg" alt="">
+                                    <p class="product_price">
+                                        2500
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Особая Шаурма</button>
+                                    </h3>
+
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                            <li class="catalog_item">
+                                <article class="product">
+                                    <img class="product_image" src="./images/shaurma.jpg" alt="">
+                                    <p class="product_price">
+                                        2800
+                                        <span class="currency">ТГ</span>
+                                    </p>
+                                    <h3 class="product_title">
+                                        <button class="product_detail">Сырная Шаурма</button>
+                                    </h3>
+
+                                    <button type="button" class="product_add">
+                                        Добавить
+                                    </button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_logo">
+                    <span class="footer_logo-name">ZumBurgers </span>
+                        <svg width="48" height="48" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M53.1212 15.326L58.6968 15.1498V34.8809H51.9707L53.1212 15.326Z" fill="white"/>
+                        <ellipse cx="35.952" cy="49.3269" rx="6.63755" ry="8.4562" fill="white"/>
+                        <path d="M23.7742 21.7562C23.7742 26.4264 20.537 25.6319 16.8712 25.6319C13.2054 25.6319 10.7646 24.3987 10.7646 22.7251C10.7646 18.0549 13.4709 17.44 17.1367 17.44C20.8025 17.44 23.7742 17.0859 23.7742 21.7562Z" fill="white"/>
+                        <path d="M7.46683 6.58261C7.14014 6.7647 6.70891 7.15489 6.48676 7.45403L6.09473 8.01331V14.9847V21.9691L6.43449 22.8406C7.66285 25.9751 10.3025 28.0561 13.478 28.3813L14.3274 28.4723L14.3927 44.21L14.458 59.9477L14.7455 60.416C14.9154 60.6761 15.2944 61.0533 15.5949 61.2614C16.0784 61.5995 16.2483 61.6385 17.1369 61.6385C18.0124 61.6385 18.1954 61.5995 18.6528 61.2874C18.9272 61.0923 19.3061 60.7151 19.4891 60.442L19.8158 59.9607L19.8811 44.223L19.9465 28.4723L20.7959 28.3813C24.0497 28.0561 26.8985 25.728 27.8916 22.6195C28.1791 21.722 28.1791 21.5789 28.1791 14.8677V8.02631L27.8263 7.51907C27.2513 6.71267 26.6502 6.37451 25.644 6.32248C24.5724 6.27045 23.8014 6.62163 23.2134 7.45403L22.8213 8.01331L22.756 11.2779L22.6907 14.5555H21.3186H19.9465L19.8811 11.2909C19.8158 8.07834 19.8158 8.02631 19.4891 7.55808C18.9402 6.73868 18.2738 6.37451 17.2807 6.32248C16.2091 6.27045 15.4381 6.62163 14.8501 7.45403L14.458 8.01331L14.3927 11.2779L14.3274 14.5555H12.9553H11.5831L11.5178 11.2909L11.4525 8.02631L11.0996 7.51907C10.5247 6.71267 9.92355 6.37451 8.91734 6.32248C8.19862 6.28346 7.95034 6.33549 7.46683 6.58261ZM22.6253 20.4734C22.6253 21.2668 21.985 22.1382 21.0572 22.6325C20.639 22.8536 20.2731 22.8796 17.1369 22.8796C13.8439 22.8796 13.6478 22.8666 13.1513 22.5934C12.2627 22.1252 11.6485 21.2538 11.6485 20.4734V20.0832H17.1369H22.6253V20.4734Z" fill="#FF7020"/>
+                        <path d="M34.5563 6.58261C34.2296 6.7647 33.7984 7.15489 33.5763 7.45403L33.1842 8.01331L33.1189 22.5154L33.0536 37.0175L31.9559 37.3427C29.2117 38.123 27.16 39.7618 26.0101 42.064C25.0039 44.106 24.834 44.9514 24.834 47.9168C24.834 50.0889 24.8732 50.6092 25.1084 51.5586C26.389 56.5921 29.2247 60.0258 33.1842 61.3394C33.9552 61.5865 34.3734 61.6385 35.8631 61.6385C37.3528 61.6385 37.771 61.5865 38.542 61.3394C42.5015 60.0258 45.3372 56.5921 46.6178 51.5586C46.853 50.6092 46.8922 50.0889 46.8922 47.9168C46.8922 45.7318 46.853 45.2375 46.6047 44.3401C45.6247 40.7373 43.2855 38.3442 39.7703 37.3427L38.6726 37.0175L38.6073 22.5284L38.542 8.02632L38.1891 7.51907C37.6142 6.71267 37.0131 6.37451 36.0068 6.32248C35.2881 6.28346 35.0398 6.33549 34.5563 6.58261ZM38.4374 42.7143C39.901 43.2085 40.855 44.3401 41.2208 45.9789C41.4691 47.1104 41.3254 49.9458 40.9595 51.1034C40.28 53.2364 38.9863 55.0313 37.588 55.7337C36.7125 56.1759 35.0268 56.1889 34.1643 55.7467C32.6746 54.9793 31.4724 53.3145 30.7406 51.0384C30.4792 50.1799 30.44 49.8028 30.44 47.9168C30.44 45.8228 30.4531 45.7578 30.819 44.9514C31.4724 43.5467 32.8053 42.6363 34.5563 42.4021C34.5563 42.4021 37.6272 42.4542 38.4374 42.7143Z" fill="#FF7020"/>
+                        <path d="M59.7515 6.53058C58.0788 7.40201 55.4914 9.76917 53.8972 11.8632C49.9246 17.1308 47.6116 24.5704 47.0759 33.87C46.8798 37.2776 46.9713 37.7849 47.873 38.6823C48.7485 39.5537 48.9837 39.5928 53.9495 39.5928H58.2095V49.6467V59.7136L58.5101 60.2599C58.6669 60.572 59.0589 61.0012 59.3725 61.2354C59.8822 61.5995 60.0129 61.6385 60.9407 61.6385C61.8293 61.6385 62.0122 61.5995 62.4696 61.2874C62.744 61.0923 63.123 60.7151 63.3059 60.442L63.6326 59.9607V34V8.02631L63.2798 7.51907C62.7048 6.69966 62.1037 6.37451 61.0975 6.32248C60.4441 6.29647 60.1174 6.33549 59.7515 6.53058ZM58.2095 24.7655V34H55.4392H52.6819L52.7734 32.6604C53.0086 29.0836 53.8841 24.7655 55.021 21.5789C55.7789 19.4719 57.8175 15.531 58.1442 15.531C58.1834 15.531 58.2095 19.68 58.2095 24.7655Z" fill="#FF7020"/>
+                        </svg>
+                        
+                </div>
+                <address class="footer_address">
+                    <div class="footer_contact">
+                        <h2 class="footer_title">Номер для заказа</h2>
+                        <a href="tel:+77015207855" class="footer_link-phone">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z"/>
+                                </svg>
+                            <span> +7(701)-520-78-55</span>
+                        </a>
+                    </div>
+
+                    <div class="footer_contact">
+                        <h2 class="footer_title">Мы в соцсетях</h2>
+                        <ul class="footer_list">
+                            <li class="footer_list-item">
+                                <a href="#" class="footer_link-sn">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 0C8.05875 0 0 8.05875 0 18C0 27.9412 8.05875 36 18 36C27.9412 36 36 27.9412 36 18C36 8.05875 27.9412 0 18 0ZM24.9225 20.3081C24.9225 20.3081 26.5144 21.8794 26.9062 22.6087C26.9175 22.6237 26.9231 22.6387 26.9269 22.6462C27.0862 22.9144 27.1237 23.1225 27.045 23.2781C26.9137 23.5369 26.4637 23.6644 26.31 23.6756H23.4975C23.3025 23.6756 22.8937 23.625 22.3987 23.2837C22.0181 23.0175 21.6431 22.5806 21.2775 22.155C20.7319 21.5212 20.2594 20.9738 19.7831 20.9738C19.7226 20.9736 19.6625 20.9831 19.605 21.0019C19.245 21.1181 18.7838 21.6319 18.7838 23.0006C18.7838 23.4281 18.4462 23.6737 18.2081 23.6737H16.92C16.4812 23.6737 14.1956 23.52 12.1706 21.3844C9.69187 18.7687 7.46062 13.5225 7.44187 13.4737C7.30125 13.1344 7.59187 12.9525 7.90875 12.9525H10.7494C11.1281 12.9525 11.2519 13.1831 11.3381 13.3875C11.4394 13.6256 11.8106 14.5725 12.42 15.6375C13.4081 17.3737 14.0138 18.0787 14.4994 18.0787C14.5904 18.0777 14.6799 18.0545 14.76 18.0112C15.3937 17.6587 15.2756 15.3994 15.2475 14.9306C15.2475 14.8425 15.2456 13.92 14.9212 13.4775C14.6887 13.1569 14.2931 13.035 14.0531 12.99C14.1503 12.856 14.2782 12.7473 14.4262 12.6731C14.8612 12.4556 15.645 12.4237 16.4231 12.4237H16.8563C17.7 12.435 17.9175 12.4894 18.2231 12.5662C18.8419 12.7144 18.855 13.1137 18.8006 14.4806C18.7838 14.8687 18.7669 15.3075 18.7669 15.825C18.7669 15.9375 18.7612 16.0575 18.7612 16.185C18.7425 16.8806 18.72 17.67 19.2112 17.9944C19.2753 18.0346 19.3494 18.056 19.425 18.0562C19.5956 18.0562 20.1094 18.0562 21.5006 15.6694C21.9297 14.9011 22.3025 14.1028 22.6162 13.2806C22.6444 13.2319 22.7269 13.0819 22.8244 13.0237C22.8963 12.9871 22.9761 12.9684 23.0569 12.9694H26.3962C26.76 12.9694 27.0094 13.0237 27.0562 13.1644C27.1387 13.3875 27.0412 14.0681 25.5169 16.1325L24.8362 17.0306C23.4544 18.8419 23.4544 18.9338 24.9225 20.3081Z"/>
+                                        </svg>                                        
+                                </a>
+                            </li>
+                            <li class="footer_list-item">
+                                <a href="#" class="footer_link-sn">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18ZM18.6458 13.2885C16.8952 14.0175 13.3942 15.525 8.14725 17.811C7.29675 18.1485 6.849 18.4815 6.8085 18.8055C6.741 19.3522 7.42725 19.5683 8.361 19.863L8.75475 19.9868C9.67275 20.286 10.9102 20.6348 11.5515 20.6483C12.1365 20.6618 12.7867 20.4233 13.5045 19.9283C18.4072 16.6185 20.9385 14.9467 21.096 14.9107C21.2085 14.8837 21.366 14.8523 21.4695 14.9468C21.5752 15.039 21.564 15.2168 21.5528 15.264C21.4853 15.5542 18.792 18.0562 17.3993 19.3522C16.965 19.7572 16.6567 20.043 16.5938 20.1082C16.455 20.25 16.314 20.3895 16.1707 20.5268C15.3157 21.3503 14.6768 21.9668 16.2045 22.9748C16.9403 23.4608 17.5298 23.859 18.117 24.2595C18.756 24.696 19.395 25.1303 20.223 25.6748C20.4322 25.8098 20.6348 25.956 20.8305 26.0955C21.5753 26.6265 22.248 27.1035 23.0737 27.027C23.5553 26.982 24.0525 26.532 24.3045 25.182C24.9007 21.9938 26.073 15.0885 26.343 12.2423C26.3595 12.0056 26.3497 11.7679 26.3137 11.5335C26.2926 11.3443 26.201 11.17 26.0573 11.0452C25.8525 10.9039 25.6085 10.8307 25.3597 10.836C24.6847 10.8472 23.643 11.2095 18.6458 13.2885Z"/>
+                                        </svg>                                        
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </address>
+             </div>
+
+        </div>
+    </footer>
+    <div class="modal modal_product">
+        <div class="modal_main modal-product">
+            <div class="modal_product-container">
+                <h2 class="modal_product-title">Мясной МакШнакенс</h2>
+                <div class="modal_product-content">
+                    <img class="modal_product-img" src="./images/photo.jpg" alt="">
+
+                    <p class="modal_product-desc">
+                        Супер мясное наслаждение!
+                         Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, 
+                         а хрустящие листья салата добавят свежести.
+                    </p>
+                    <div class="modal_product-in">
+                        <h3 class="in_title">
+                        Состав    
+                        </h3>
+                            <ul class="in_list">
+                                <li class="in_item">Пшеничная булочка</li>
+                                <li class="in_item">Котлета из говядины</li>
+                                <li class="in_item">Красный лук</li>
+                                <li class="in_item">Листья салата</li>
+                                <li class="in_item">Соус горчичный</li>
+                            </ul>
+                            <p class="in_calories">520г ккал 430</p>
+                    </div>
+                </div>
+                <div class="modal_product-footer">
+                    <div class="modal_product-add">
+                        <button class="modal_product-btn">Добавить</button>
+                        <div class="modal_product-count  count">
+                            <button class="count_minus">-</button>
+
+                            <p class="count_amount">1</p>
+
+                            <button class="count_plus">+</button>
+                        </div>
+                    </div>
+                    <p class="modal_product-price"> 1354
+                        <span>ТГ</span>
+                    </p>
+                </div>
+            </div>
+            <button class="modal_close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="7.0752" y="8.28249" width="1" height="20" transform="rotate(-45 7.0752 8.28249)" />
+                    <rect x="7.78223" y="22.4246" width="1" height="20" transform="rotate(-135 7.78223 22.4246)"/>
+                    </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modaltwo modal">
+        <div class="modal_main modal_delivery">
+            <div class="modal_delivery-container">
+                <h2 class="modal_delivery-title">Доставка</h2>
+                <form id="delivery" action="" class="modal_delivery-form">
+                    <fieldset class="modal_delivery-fieldset fieldset_delivery_your" disabled>
+                        <input class="modal_delivery-input" type="text" name="name" placeholder="Ваше имя">
+                        <input class="modal_delivery-input" type="tel" name="phone" placeholder="Телефон">
+                    </fieldset>
+                    <fieldset class="modal_delivery-fieldset modal_delivery-fieldset_radio ">
+                        <label class="modal_delivery-label">
+                            <input class="modal_delivery-radio delivery-your" type="radio" name="format" value="pickup">
+                            Самовывоз
+                        </label>
+                        <label class="modal_delivery-label">
+                            <input class="modal_delivery-radio delivery" type="radio" name="format" value="delivery" checked>
+                            Доставка
+                        </label>
+                    </fieldset>
+                    <fieldset class="modal_delivery-fieldset fieldset_delivery">
+                        <input class="modal_delivery-input" type="text" name="address" placeholder="Улица,дом,квартира">
+                        <input class="modal_delivery-input modal_delivery-input-half" type="number" name="floor" placeholder="Этаж">
+                        <input class="modal_delivery-input modal_delivery-input-half" type="number" name="intercom" placeholder="Домофон">
+                    </fieldset>
+                </form>
+                <button class="modal_delivery-submit" type="submit" form="delivery">Оформить</button>
+            </div>
+
+            <button class="modal_close" onclick="buttonClose()">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="7.0752" y="8.28249" width="1" height="20" transform="rotate(-45 7.0752 8.28249)" />
+                    <rect x="7.78223" y="22.4246" width="1" height="20" transform="rotate(-135 7.78223 22.4246)"/>
+                    </svg>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
