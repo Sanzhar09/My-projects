@@ -1,0 +1,46 @@
+{
+  "pictures": [
+    {
+      "image": "",
+      "name" : "Pic 1",
+      "price":100
+    },
+    {
+      "image": "",
+      "name" : "Pic 2",
+      "price":102
+    },
+    {
+      "image": "",
+      "name" : "Pic 3",
+      "price":123
+    },
+
+    {
+      "image": "",
+      "name" : "Pic 4",
+      "price":1011
+    },
+    {
+      "image": "",
+      "name" : "Pic 5",
+      "price":200
+    },
+    {
+      "image": "",
+      "name" : "Pic 6",
+      "price":400
+    },
+    {
+      "image": "",
+      "name" : "Pic 7",
+      "price":520
+    }, {
+      "image": "",
+      "name" : "Pic 8",
+      "price":212
+    } 
+
+    
+  ]
+}
