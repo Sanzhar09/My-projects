@@ -1,0 +1,37 @@
+.mainContent {
+    padding-top: 43px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    .contentButtons {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        li {
+            list-style: none;
+            font-family: 'Proxima Nova';
+            padding: 14.5px 40px;
+            border: #F9F9F9;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.015em;
+        }
+    }
+    .contentSort {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        ul {
+            li {
+                list-style: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

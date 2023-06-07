@@ -1,0 +1,43 @@
+
+ [
+    {
+        "id":0,
+        "imageUrl": "../../images/shirt.jpg",
+        "title": "FOCUS",
+        "types":[0,1],
+        "sizes": [40,42,44],
+        "price":125,
+        "category":1,
+        "rating":2
+    },
+    {
+        "id":1,
+        "imageUrl": "../../images/shirt.jpg",
+        "title": "Sensei",
+        "types":[0,1],
+        "sizes": [39,43,45],
+        "price":145,
+        "category":1,
+        "rating":2
+    },
+    {
+        "id":2,
+        "imageUrl": "../shirt.jpg",
+        "title": "SUPER",
+        "types":[0],
+        "sizes": [41,42,43],
+        "price":85,
+        "category":1,
+        "rating":2
+    },
+    {
+        "id":3,
+        "imageUrl": "https://www.vsemayki.ru/constructor?alias=manshortfull",
+        "title": "ARGUN",
+        "types":[1],
+        "sizes": [37,36,35],
+        "price":155,
+        "category":1,
+        "rating":2
+    }
+ ]

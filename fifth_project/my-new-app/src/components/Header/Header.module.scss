@@ -1,0 +1,75 @@
+.headerWrapper {
+    padding: 40px 0 50px 0;
+    border-bottom: 1px solid #F7F7F7;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        width: 100%;
+        margin: 0 auto;
+        &Logo {
+            &Link {
+                h3 {
+                    font-family: inherit;
+                    font-size: 24px;
+                    line-height: 29px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    color: hsl(263, 100%, 45%);
+                    span {
+                        font-family: inherit;
+                        font-size: 24px;
+                        line-height: 29px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        color: #FF0064;
+                    }
+                }
+                span {
+                    font-family: 'Proxima Nova';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #7b7b7b;
+                }
+            }
+        }
+        .cartWrapper {
+            padding: 15px 23px;
+            background: #FF0064;
+            border-radius: 30px;
+            display: flex;
+            gap: 13px;
+        
+            .cartPrice {
+                display: flex;
+                align-items: center;
+                color: #FFFF;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: .9px;
+                margin: 0;
+                background: #FF0064;
+            }
+            .cartBorder {
+                width: 1px;
+                height: 25px;
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+            .cartBasket {
+                color: #FFFF;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                background: #FF0064;
+                .basketImg {
+                    background: #FF0064;
+                }
+                span {
+                    color: #FFFF;
+                    background: #FF0064;
+                }
+            }
+        }
+    }
+}

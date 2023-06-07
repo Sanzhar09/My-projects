@@ -1,0 +1,108 @@
+.mainBlock {
+    padding-top: 35px;
+    padding-left: 107px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 459px;
+    align-items: center;
+    margin-bottom: 75px;
+    .mainTitle {
+        margin-bottom: 35px;
+    }
+    .firstBlock {
+        .titleName {
+            text-align: center;
+        }
+    }
+    .secondBlock {
+        background-color: #F3F3F3;
+        border-radius: 10px;
+        padding: 7px 6px;
+        max-width: 280px;
+        max-height: 85px;
+        margin-bottom: 17px;
+        margin-top: 22px;
+        .blocks {
+            display: flex;
+            justify-content: space-around;
+            gap: 6px;
+            li {
+                font-family: 'Proxima Nova';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 17px;
+            }
+            li {
+                list-style: none;
+                padding: 6px 30px;
+                border-radius: 5px;
+            }
+            .blockContentTwo {
+                list-style: none;
+                padding: 4px 20px;
+                border-radius: 5px;
+            }
+        }
+
+        
+    }
+    .thirdBlock {
+        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .price {
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.015em;
+            color: #000000;
+            .priceBlock {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .addButton {
+            min-width: 155px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #DDDDDD;
+            border-radius: 30px;
+            background: #FFFFFF;
+            padding: 7px 9px;
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #282828;
+            .countButton {
+                margin-left: 10px;
+                background-color: #282828;
+                color: #FFF;
+                border-radius: 20px;
+                padding: 2px 7px;
+            }
+            .plusButton {
+                color: #282828;
+                font-size: 20px; 
+                margin-right: 10px
+            }
+        }
+        
+        .addButton:hover {
+            .plusButton {
+            color: #FFF;
+            }
+            background-color:#FF0064;
+            color: #FFF;
+        }
+    }
+}
+
+.active {
+    background-color: #FFF;
+}
